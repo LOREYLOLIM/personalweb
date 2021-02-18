@@ -1,0 +1,66 @@
+{% load staticfiles %}
+
+<nav class="navbar navbar-expand-md fixed-top" style="background-color: blueviolet;">
+  <a class="navbar-brand" href="{% url 'index' %}" style="color: cornsilk; padding-left: 100px;">EMMANUEL LOLIM LOREY</a>
+  <div class="navbar-toggler navbar-brand" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="icon-menu" style="color: cornsilk;" >Menu</span>
+  </div>
+
+  <div class="collapse navbar-collapse" style="color: cornsilk;" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'index' %}" style="color: cornsilk;">Home <span class="sr-only">(current)</span></a>
+  
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'portfolio' %}" style="color: cornsilk;">Portfolio <span class="sr-only">(current)</span></a>
+  
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'blog' %}" style="color: cornsilk;">Blog <span class="sr-only">(current)</span></a>
+
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'testimonial' %}" style="color: cornsilk;">Testimonials<span class="sr-only">(current)</span></a>
+  
+      </li>
+  
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'services' %}" style="color: cornsilk;">Services<span class="sr-only">(current)</span></a>
+  
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'contacts' %}" style="color: cornsilk;">Contacts<span class="sr-only">(current)</span></a>
+  
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: cornsilk;">Abouts</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="{% url 'pricing' %}">Pricing</a>
+          <a class="dropdown-item" href="{% url 'FAQs' %}">FAQs</a>
+        </div>
+      </li>
+          
+      <div class="col" style="padding-left:150px;">
+      <p class="col"></p>
+    </div>
+          <l1>
+            <p>Lets Connect On:
+            <a href="" style="color: cornsilk;"><i aria-hidden="true" class="fa fa-facebook-square"></i></a>
+            <a href="" style="color: cornsilk;"><i aria-hidden="true" class="fa fa-twitter-square"></i></a>
+            <a href="" style="color: cornsilk;"><i aria-hidden="true" class="fa fa-linkedin-square"></i></a>
+            <a href="" style="color: cornsilk;"><i aria-hidden="true" class="fa fa-google-plus-square"></i></a>
+            <a href="" style="color: cornsilk;"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+          </p>
+          </l1>
+        
+      
+    </ul>
+    
+  </div>
+</nav>
+
+
+

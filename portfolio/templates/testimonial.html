@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+
+<section class="site-section testimonial-wrap" id="testimonials-section" data-aos="fade">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h2 class="section-title mb-3">Testimonials</h2>
+      </div>
+    
+  <div class="slide-one-item home-slider owl-carousel">
+      <div>
+        <div class="testimonial">
+          
+    <h2>New post</h2>
+    <form method="POST" class="post-form">
+      {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+
+{% for U in update %}
+
+<p>{{U.Name}}</p>
+<p>{{U.Testimonial}}</p>
+
+{% endfor %}
+
+          <blockquote class="mb-5">
+            <p>&ldquo;will be Updated Soon.&rdquo;</p>
+          </blockquote>
+
+          <figure class="mb-4 d-flex align-items-center justify-content-center">
+            <div><img src="" alt="" class="w-50 img-fluid mb-3"></div>
+            <p></p>
+          </figure>
+        </div>
+      </div>
+      <div>
+        <div class="testimonial">
+
+          <blockquote class="mb-5">
+            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+          </blockquote>
+          <figure class="mb-4 d-flex align-items-center justify-content-center">
+            <div><img src="images/person_2.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+            <p>Christine Aguilar</p>
+          </figure>
+          
+        </div>
+      </div>
+
+      <div>
+        <div class="testimonial">
+
+          <blockquote class="mb-5">
+            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+          </blockquote>
+          <figure class="mb-4 d-flex align-items-center justify-content-center">
+            <div><img src="images/person_4.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+            <p>Robert Spears</p>
+          </figure>
+
+          
+        </div>
+      </div>
+
+      <div>
+        <div class="testimonial">
+
+          <blockquote class="mb-5">
+            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+          </blockquote>
+          <figure class="mb-4 d-flex align-items-center justify-content-center">
+            <div><img src="images/person_4.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+            <p>Bruce Rogers</p>
+          </figure>
+
+        </div>
+      </div>
+      </div>
+
+    </div>
+</section>
+
+{% endblock %}
