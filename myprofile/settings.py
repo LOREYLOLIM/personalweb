@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '0_0fv#$fot(32g%%2$c+!*9al+c@wk%#u%4u(en3*$2h0gbndz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'portfolio',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -129,4 +130,4 @@ if DEBUG:
     STATICFILES_DIR = (
         os.path.join(os.path.dirname(BASE_DIR), "static"),
     )
-
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

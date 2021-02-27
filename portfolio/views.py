@@ -34,7 +34,7 @@ def testimonial(request):
             form.save()
     else:
         form = TestimonialForm()
-
+    
     update = Testimonial.objects.all()
     context = {'form':form, 'update':update}
     template = 'testimonial.html'
